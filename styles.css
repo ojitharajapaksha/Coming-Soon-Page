@@ -6,14 +6,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100vh;
     text-align: center;
     overflow: hidden;
     padding: 0 1rem;
 }
 
 .container {
-    max-width: 90%;
+    width: 100%;
+    max-width: 600px; 
     margin: 0 auto;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: #00ff88;
 }
@@ -42,7 +43,7 @@ body {
 }
 
 .email-form input[type="email"] {
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
     width: 90%;
     max-width: 400px;
@@ -52,7 +53,7 @@ body {
 }
 
 .email-form button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -72,7 +73,7 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 2rem;
 }
 
@@ -120,83 +121,94 @@ footer {
     }
 }
 
-@media (max-width: 1024px) {
-    .header h1 {
-        font-size: 1.8rem;
-    }
-
-    .header p {
-        font-size: 0.9rem;
-    }
-
-    .logo img {
-        max-width: 350px; 
-    }
-
-    .email-form input[type="email"],
-    .email-form button {
-        font-size: 0.9rem;
-    }
-}
-
 @media (max-width: 768px) {
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .header p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .logo img {
-        max-width: 300px;
+        max-width: 380px;
     }
 
     .email-form input[type="email"],
     .email-form button {
-        padding: 8px;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .social-links a {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        font-size: 1.2rem;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 1.4rem;
     }
 
     footer {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 }
 
 @media (max-width: 480px) {
     .header h1 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .header p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
     }
 
     .logo img {
-        max-width: 250px;
+        max-width: 280px;
     }
 
     .email-form input[type="email"],
     .email-form button {
-        padding: 6px;
-        font-size: 0.7rem;
-    }
-
-    .social-links a {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        padding: 10px;
         font-size: 1rem;
     }
 
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.4rem;
+    }
+
     footer {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1.1rem;
+    }
+
+    .logo img {
+        max-width: 500px;
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        font-size: 1.2rem;
+    }
+
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.6rem;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 }
