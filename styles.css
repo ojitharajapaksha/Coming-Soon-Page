@@ -9,28 +9,28 @@ body {
     height: 100vh;
     text-align: center;
     overflow: hidden;
+    padding: 0 1rem; /* Add padding to body for better spacing */
 }
 
 .container {
-    max-width: 600px;
-}
-
-.logo {
-    margin-bottom: 1.5rem;
+    max-width: 90%; /* Make container responsive */
+    margin: 0 auto;
 }
 
 .logo img {
-    width: 550px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 550px; /* Ensure the logo fits well */
+    margin-bottom: 1.5rem;
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 2rem; /* Reduce font size on smaller screens */
     margin-bottom: 0.5rem;
     color: #00ff88;
 }
 
 .header p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjust subheading font size for smaller screens */
     color: #cfcfcf;
     margin-bottom: 2rem;
 }
@@ -44,8 +44,8 @@ body {
 .email-form input[type="email"] {
     padding: 10px;
     font-size: 1rem;
-    width: 80%;
-    max-width: 400px;
+    width: 90%; /* Full width on smaller screens */
+    max-width: 400px; /* Limit the width for mobile devices */
     border: none;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -61,6 +61,8 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    width: 90%; /* Full width on smaller screens */
+    max-width: 400px;
 }
 
 .email-form button:hover {
@@ -70,31 +72,7 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 2rem;
-}
-
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #00ff88;
-}
-
-footer {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #cfcfcf;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 10px; /* Reduce spacing between social icons */
     margin-top: 2rem;
 }
 
@@ -116,25 +94,8 @@ footer {
     color: #121a2b;
 }
 
-/* Typewriter effect */
-@keyframes typewriter {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-    to {
-        width: 100%;
-        opacity: 1;
-    }
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #cfcfcf;
 }
-
-.typewriter-heading {
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid #00ff88;
-    animation: typewriter 3s steps(40, end) 0.5s forwards;
-}
-
