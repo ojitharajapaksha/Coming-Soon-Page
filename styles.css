@@ -6,31 +6,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
     text-align: center;
     overflow: hidden;
-    padding: 0 1rem; 
+    padding: 0 1rem;
 }
 
 .container {
-    max-width: 90%; 
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .logo img {
-    width: 100%; 
-    max-width: 550px; 
+    width: 100%;
+    max-width: 450px; 
     margin-bottom: 1.5rem;
 }
 
 .header h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     color: #00ff88;
 }
 
 .header p {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: #cfcfcf;
     margin-bottom: 2rem;
 }
@@ -44,8 +44,8 @@ body {
 .email-form input[type="email"] {
     padding: 10px;
     font-size: 1rem;
-    width: 90%; 
-    max-width: 400px; 
+    width: 90%;
+    max-width: 400px;
     border: none;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -61,7 +61,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-    width: 90%; 
+    width: 90%;
     max-width: 400px;
 }
 
@@ -72,7 +72,7 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
     margin-top: 2rem;
 }
 
@@ -102,13 +102,13 @@ footer {
 
 .typewriter-heading {
     display: inline-block;
-    overflow: hidden; 
-    white-space: nowrap; 
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 2rem;
     margin: 0;
     padding: 0;
     line-height: 1;
-    animation: typing 4s steps(30, end) forwards; 
+    animation: typing 4s steps(30, end) forwards;
 }
 
 @keyframes typing {
@@ -120,5 +120,83 @@ footer {
     }
 }
 
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
 
+    .header p {
+        font-size: 0.9rem;
+    }
 
+    .logo img {
+        max-width: 350px; 
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.8rem;
+    }
+
+    .logo img {
+        max-width: 300px;
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .header p {
+        font-size: 0.7rem;
+    }
+
+    .logo img {
+        max-width: 250px;
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+
+    .social-links a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
