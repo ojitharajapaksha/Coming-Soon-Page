@@ -9,28 +9,29 @@ body {
     height: 100vh;
     text-align: center;
     overflow: hidden;
-    padding: 0 1rem; 
+    padding: 0 1rem;
 }
 
 .container {
-    max-width: 90%; 
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .logo img {
-    width: 100%; 
-    max-width: 550px; 
+    width: 100%;
+    max-width: 550px;
     margin-bottom: 1.5rem;
 }
 
 .header h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     color: #00ff88;
+    word-wrap: break-word; 
 }
 
 .header p {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: #cfcfcf;
     margin-bottom: 2rem;
 }
@@ -44,8 +45,8 @@ body {
 .email-form input[type="email"] {
     padding: 10px;
     font-size: 1rem;
-    width: 90%; 
-    max-width: 400px; 
+    width: 90%;
+    max-width: 400px;
     border: none;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -61,7 +62,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-    width: 90%; 
+    width: 90%;
     max-width: 400px;
 }
 
@@ -72,7 +73,7 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
     margin-top: 2rem;
 }
 
@@ -102,13 +103,13 @@ footer {
 
 .typewriter-heading {
     display: inline-block;
-    overflow: hidden; 
-    white-space: nowrap; 
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 2rem;
     margin: 0;
     padding: 0;
     line-height: 1;
-    animation: typing 4s steps(30, end) forwards; 
+    animation: typing 4s steps(30, end) forwards;
 }
 
 @keyframes typing {
@@ -117,5 +118,99 @@ footer {
     }
     to {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        padding: 0 10px; 
+    }
+
+    .header p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .logo img {
+        max-width: 250px;
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.4rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        max-width: 380px;
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 1.4rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1.1rem;
+    }
+
+    .logo img {
+        max-width: 500px;
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        font-size: 1.2rem;
+    }
+
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.6rem;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 }
