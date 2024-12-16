@@ -17,6 +17,10 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    animation: pinchOut 1s ease-out;
+}
+
 .logo img {
     width: 100%;
     max-width: 550px;
@@ -109,7 +113,7 @@ footer {
     margin: 0;
     padding: 0;
     line-height: 1;
-    animation: typing 4s steps(30, end) forwards;
+    animation: typing 1s steps(30, end) forwards;
 }
 
 @keyframes typing {
@@ -118,6 +122,20 @@ footer {
     }
     to {
         width: 100%;
+    }
+}
+
+@keyframes pinchOut {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
